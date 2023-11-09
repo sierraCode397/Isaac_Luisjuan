@@ -1,32 +1,10 @@
-const axios = require('axios');
+'use client'
+import useFetch from './../hooks/useFetch';
 
   export default function Certificates() {
+    const apiUrl = 'https://node-autentication-app.onrender.com/api/v1/certificates'
 
-const axios = require('axios');
-
-    const apiUrl = 'https://node-autentication-app.onrender.com/api/v1/certificates';
-
-    let products = [];
-
-    async function obtenerProductos(apiUrl) {
-        try {
-          const response = await axios.get(apiUrl);
-          products = response.data;
-          return products;
-        } catch (error) {
-          console.error(error);
-        }
-      }
-    
-      obtenerProductos(apiUrl)
-      .then((products) => {
-        console.log(products)
-
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-
+    const items = useFetch(apiUrl);
 
     return (
 <div className="bg-gray-100 overflow-x-auto">
@@ -36,7 +14,7 @@ const axios = require('axios');
 
       <div className="mt-6 space-x-4">
         <div className="lg:flex lg:space-x-4 lg:py-4">
-          {products.map((product) => (
+          {items?.map((product) => (
             <div key={product.name} className="group relative flex-shrink-0">
               <div className="relative h-80 w-80 overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
                 <img
