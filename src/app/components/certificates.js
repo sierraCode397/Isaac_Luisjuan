@@ -1,31 +1,10 @@
-const axios = require('axios');
+'use client'
+import useFetch from './../hooks/useFetch';
 
   export default function Certificates() {
+    const apiUrl = 'https://node-autentication-app.onrender.com/api/v1/certificates'
 
-const axios = require('axios');
-
-    const apiUrl = 'https://node-autentication-app.onrender.com/api/v1/certificates';
-
-    let products = [];
-
-    async function obtenerProductos(apiUrl) {
-        try {
-          const response = await axios.get(apiUrl);
-          products = response.data;
-          return products;
-        } catch (error) {
-          console.error(error);
-        }
-      }
-    
-      obtenerProductos(apiUrl)
-      .then((products) => {
-        console.log(products)
-
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+  const products = useFetch(apiUrl);
 
 
     return (
