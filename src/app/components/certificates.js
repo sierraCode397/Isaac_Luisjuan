@@ -25,10 +25,12 @@ import useFetch from './../hooks/useFetch';
           >
             {sortedItems?.map((product) => (
               <div key={product.name} className="group relative flex-shrink-0" style={{ margin: '0 10px' }}>
-                <div className="relative h-80 w-80 overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                <div className="relative h-64 w-80 overflow-hidden rounded-lg bg-white">
                   <img
                     src={product.image}
                     className="h-full w-full object-cover object-center"
+                    alt={product.name}
+                    style={{ maxHeight: '256px' }}
                   />
                 </div>
                 <h3 className="mt-6 text-sm text-gray-500">
@@ -39,6 +41,7 @@ import useFetch from './../hooks/useFetch';
                 </h3>
               </div>
             ))}
+
           </div>
         </div>
       </div>
