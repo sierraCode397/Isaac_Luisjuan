@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <>
       <Master />
-      <div className="container mx-auto pb-12"/>
+        <div className="container mx-auto pb-12 bg-black" />
       <Description />
-      <div className="container mx-auto pb-12"/>
+        <div className="container mx-auto pb-12 bg-black" />
       <Portafolio />
-      <div className="container mx-auto pb-12"/>
+        <div className="container mx-auto pb-12 bg-black" />
       <Certificates />
       <Footer />
     </>
