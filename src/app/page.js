@@ -15,6 +15,7 @@ export default function Home() {
       <Portafolio />
         <div className="container mx-auto pb-12 bg-black" />
       <Certificates />
+        <div className="container mx-auto pb-12 bg-black" />
       <Footer />
     </>
   )
