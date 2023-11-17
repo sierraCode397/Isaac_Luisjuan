@@ -11,7 +11,7 @@ const Portafolio = () => {
     const sortedItems = [...items].sort((a, b) => a.id - b.id);
 
   return (
-    <section className="bg-gray-900">
+    <section id='portfolio' className="bg-gray-900">
         <div className="container px-6 py-10 mx-auto">
             <h1 className="text-2xl font-semibold text-center capitalize lg:text-4xl text-white">Portfolio
             </h1>
@@ -36,10 +36,15 @@ const Portafolio = () => {
                     >  
                         <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-900/70 group-hover:opacity-100">
                             <span class="relative flex h-3 w-3">
-                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-                                <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                             </span>
-                            <p className="mt-4 text-lg tracking-wider font-extrabold text-blue-500 uppercase hover:animate-bounce ">{proyect.name}</p>
+
+                            <p className="mt-4 text-lg tracking-wider font-extrabold text-blue-500 uppercase relative hover:animate-bounce group">
+                                {proyect.name}
+                                <span className="absolute bottom-0 left-0 w-0 bg-black h-px transition-all duration-1000 group-hover:w-full group-hover:bg-white"></span>
+                            </p>
+
                             <h2 className="mt-2 text-lg font-normal font-sans text-white ">{proyect.description}</h2>
 
                             {/* Aplicamos cursor-pointer solo a las etiquetas <a> */}

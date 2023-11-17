@@ -8,9 +8,9 @@ import useFetch from './../hooks/useFetch';
     const sortedItems = [...items].sort((a, b) => a.id - b.id);
 
     return (
-      <div className="bg-gray-100" style={{ overflowX: 'hidden' }}> {/* Cambiado overflow-x-auto a overflow-x-hidden */}
+      <div id='certificates' className="bg-gray-100" style={{ overflowX: 'hidden' }}> {/* Cambiado overflow-x-auto a overflow-x-hidden */}
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+          <div className="mx-auto max-w-2xl py-12 sm:py-16 lg:max-w-none lg:py-20">
             <h2 className="text-2xl font-bold text-gray-900">Certifications</h2>
 
             <div className="mt-6 space-x-4">
