@@ -62,8 +62,8 @@ const Footer = () => {
 
                         <div>
                             <h3 className="uppercase text-white">Products</h3>
-                            <Link href="https://admin-ecommerce-next.vercel.app/" className="block mt-2 text-sm text-gray-400 hover:underline">Admin</Link>
                             <Link href="https://e-commerce-next-six.vercel.app/" className="block mt-2 text-sm text-gray-400 hover:underline">E-Commerce</Link>
+                            <Link href="https://admin-ecommerce-next.vercel.app/" className="block mt-2 text-sm text-gray-400 hover:underline">Admin</Link>
                             <Link href="https://node-autentication-app.onrender.com/api" className="block mt-2 text-sm text-gray-400 hover:underline">API</Link>
                         </div>
 
