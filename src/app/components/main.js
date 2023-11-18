@@ -1,11 +1,13 @@
 'use client'
 
-import React from "react";
 import Link from 'next/link';
-
 import Navbar from "./../common/nav";
+const { useMiContexto }= require ('./../hooks/useContext');
 
 export default function Profile() {
+
+  const { portafolioItems, certificateItems, skillItem } = useMiContexto();
+
   return (
     <>
       <Navbar transparent />
@@ -74,19 +76,19 @@ export default function Profile() {
                     <div className="flex justify-center py-4 lg:pt-4 pt-8">
                       <div className="mr-4 p-3 text-center">
                         <span className="text-xl font-bold block uppercase tracking-wide text-gray-700">
-                          22
+                          {skillItem.length}
                         </span>
-                        <span className="text-sm text-gray-500">Technologies</span>
+                        <span className="text-sm text-gray-500">Skills</span>
                       </div>
                       <div className="mr-4 p-3 text-center">
                         <span className="text-xl font-bold block uppercase tracking-wide text-gray-700">
-                          10
+                          {certificateItems.length}
                         </span>
                         <span className="text-sm text-gray-500">Certifications</span>
                       </div>
                       <div className="lg:mr-4 p-3 text-center">
                         <span className="text-xl font-bold block uppercase tracking-wide text-gray-700">
-                          89
+                          {portafolioItems.length}
                         </span>
                         <span className="text-sm text-gray-500">Projects</span>
                       </div>

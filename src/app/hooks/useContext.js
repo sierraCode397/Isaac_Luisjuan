@@ -10,8 +10,10 @@ const MiContexto = createContext();
 // Proveedor del contexto
 export const MiContextoProvider = ({ children }) => {
     
-    const certificates = 'https://node-autentication-app.onrender.com/api/v1/certificates'
+    const certificates = 'https://node-autentication-app.onrender.com/api/v1/certificates';
     const portafolios = 'https://node-autentication-app.onrender.com/api/v1/portafolios';
+    const technologies = 'https://node-autentication-app.onrender.com/api/v1/skills';
+
 
 
     const portafolio = useFetch(portafolios);
@@ -34,9 +36,21 @@ export const MiContextoProvider = ({ children }) => {
       }
     }
 
+    const skills = useFetch(technologies);
+    let skillItem = []
+    if (diploma) {
+        try {
+            skillItem = [...skills].sort((a, b) => a.id - b.id);
+        } catch (errorSorting) {
+          console.error('Error al clasificar datos:', errorSorting);
+        }
+      }
+
+
     const contextValue = {
         portafolioItems,
         certificateItems,
+        skillItem
       };
 
     return <MiContexto.Provider value={contextValue}>{children}</MiContexto.Provider>;
