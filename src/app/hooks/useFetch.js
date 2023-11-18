@@ -22,6 +22,7 @@ function useFetch(endpoint) {
 
     // La dependencia de este efecto puede ser vacía o específica, según tus necesidades
   }, [endpoint]);
+
   return items
 };
 

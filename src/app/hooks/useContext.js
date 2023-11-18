@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext } from 'react';
 import useFetch from './../hooks/useFetch';
+const { config } = require('./../config/config');
 
 
 // Crear el contexto
@@ -9,42 +10,30 @@ const MiContexto = createContext();
 
 // Proveedor del contexto
 export const MiContextoProvider = ({ children }) => {
-    
-    const certificates = 'https://node-autentication-app.onrender.com/api/v1/certificates';
-    const portafolios = 'https://node-autentication-app.onrender.com/api/v1/portafolios';
-    const technologies = 'https://node-autentication-app.onrender.com/api/v1/skills';
+
+    const portafolio = useFetch(config.portafolios || 'https://node-autentication-app.onrender.com/api/v1/portafolios');
+
+    const diploma = useFetch(config.certificates || 'https://node-autentication-app.onrender.com/api/v1/certificates');
+
+    const skills = useFetch(config.technologies || 'https://node-autentication-app.onrender.com/api/v1/skills');
 
 
-
-    const portafolio = useFetch(portafolios);
-    let portafolioItems = [];
-    if (portafolio) {
-      try {
-        portafolioItems = [...portafolio].sort((a, b) => a.id - b.id);
-      } catch (errorSorting) {
-        console.error('Error al clasificar datos:', errorSorting);
-      }
-    }
-
-    const diploma = useFetch(certificates);
-    let certificateItems = [];
-    if (diploma) {
-      try {
-        certificateItems = [...diploma].sort((a, b) => a.id - b.id);
-      } catch (errorSorting) {
-        console.error('Error al clasificar datos:', errorSorting);
-      }
-    }
-
-    const skills = useFetch(technologies);
-    let skillItem = []
-    if (diploma) {
+      const sortData = (data) => {
         try {
-            skillItem = [...skills].sort((a, b) => a.id - b.id);
-        } catch (errorSorting) {
-          console.error('Error al clasificar datos:', errorSorting);
+          return data ? [...data].sort((a, b) => a.id - b.id) : [];
+        } catch (error) {
+          console.error('Error al clasificar datos:', error);
+          return [];
         }
-      }
+      };  
+
+        const portafolioItems = sortData(portafolio);
+        const certificateItems = sortData(diploma);
+        const skillItem = sortData(skills);
+
+      console.log('Portafolios:', config.portafolios);
+      console.log('Certificados:', config.certificates);
+      console.log('Tecnologías:', config.technologies);
 
 
     const contextValue = {
