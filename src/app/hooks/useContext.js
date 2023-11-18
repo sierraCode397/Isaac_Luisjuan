@@ -31,11 +31,6 @@ export const MiContextoProvider = ({ children }) => {
         const certificateItems = sortData(diploma);
         const skillItem = sortData(skills);
 
-      console.log('Portafolios:', config.portafolios);
-      console.log('Certificados:', config.certificates);
-      console.log('Tecnologías:', config.technologies);
-
-
     const contextValue = {
         portafolioItems,
         certificateItems,
