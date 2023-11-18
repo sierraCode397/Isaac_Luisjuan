@@ -1,14 +1,10 @@
-'use client'
+"use client"
 
-import React from 'react'
-import useFetch from './../hooks/useFetch';
-
+const { useMiContexto }= require ('./../hooks/useContext');
 
 const Portafolio = () => {
-    const apiUrl = 'https://node-autentication-app.onrender.com/api/v1/portafolios'
 
-    const items = useFetch(apiUrl);
-    const sortedItems = [...items].sort((a, b) => a.id - b.id);
+    const {portafolioItems} = useMiContexto();
 
   return (
     <section id='portfolio' className="bg-gray-900">
@@ -22,7 +18,7 @@ const Portafolio = () => {
 
             <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
                 
-                {sortedItems?.map((proyect) => (
+                {portafolioItems?.map((proyect) => (
 
                     <div
                     key={proyect.name}
@@ -35,9 +31,9 @@ const Portafolio = () => {
                     }}
                     >  
                         <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-900/70 group-hover:opacity-100">
-                            <span class="relative flex h-3 w-3">
-                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                            <span className="relative flex h-3 w-3">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                             </span>
 
                             <p className="mt-4 text-lg tracking-wider font-extrabold text-blue-500 uppercase relative hover:animate-bounce group">

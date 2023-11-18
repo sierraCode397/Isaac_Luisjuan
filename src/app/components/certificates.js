@@ -1,11 +1,11 @@
 'use client'
-import useFetch from './../hooks/useFetch';
+
+const { useMiContexto }= require ('./../hooks/useContext');
+
 
   export default function Certificates() {
-    const apiUrl = 'https://node-autentication-app.onrender.com/api/v1/certificates'
 
-    const items = useFetch(apiUrl);
-    const sortedItems = [...items].sort((a, b) => a.id - b.id);
+    const {certificateItems} = useMiContexto();
 
     return (
       <div id='certificates' className="bg-gray-100" style={{ overflowX: 'hidden' }}> {/* Cambiado overflow-x-auto a overflow-x-hidden */}
@@ -23,7 +23,7 @@ import useFetch from './../hooks/useFetch';
                     margin: '0 -10px',
                   }}
                 >
-                  {sortedItems?.map((product) => (
+                  {certificateItems?.map((product) => (
                     <div key={product.name} className="group relative flex-shrink-0" style={{ margin: '0 10px' }}>
                       <div className="relative h-64 w-80 overflow-hidden rounded-lg bg-white">
                         <img
