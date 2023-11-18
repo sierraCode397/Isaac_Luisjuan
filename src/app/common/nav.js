@@ -12,7 +12,7 @@ export default function Navbar(props) {
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
-              className="text-white text-2xl font-bold leading-relaxed inline-block whitespace-nowrap uppercase hover:underline hover:animate-bounce"
+              className="text-white text-lg font-bold leading-relaxed inline-block whitespace-nowrap uppercase hover:underline hover:animate-bounce"
               href="https://github.com/sierraCode397"
             >
               Sierra-Code-397
