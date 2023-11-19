@@ -51,6 +51,7 @@ const Footer = () => {
                             <Link href="/#main" className="block mt-2 text-sm text-gray-400 hover:underline">Presentation</Link>
                             <Link href="/#description" className="block mt-2 text-sm text-gray-400 hover:underline">MySelf</Link>
                             <Link href="/#portfolio" className="block mt-2 text-sm text-gray-400 hover:underline">Portfolio</Link>
+                            <Link href="/#skills" className="block mt-2 text-sm text-gray-400 hover:underline">Skills</Link>
                             <Link href="/#certificates" className="block mt-2 text-sm text-gray-400 hover:underline">Certifications</Link>
                         </div>
 

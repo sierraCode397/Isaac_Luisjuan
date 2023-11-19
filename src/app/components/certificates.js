@@ -5,7 +5,7 @@ const { useMiContexto }= require ('./../hooks/useContext');
 
   export default function Certificates() {
 
-    const {certificateItems} = useMiContexto();
+    const { certificateItems } = useMiContexto();
 
     return (
       <div id='certificates' className="bg-gray-100" style={{ overflowX: 'hidden' }}> {/* Cambiado overflow-x-auto a overflow-x-hidden */}

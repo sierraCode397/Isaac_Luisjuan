@@ -4,7 +4,7 @@ const { useMiContexto }= require ('./../hooks/useContext');
 
 const Portafolio = () => {
 
-    const {portafolioItems} = useMiContexto();
+    const { portafolioItems } = useMiContexto();
 
   return (
     <section id='portfolio' className="bg-gray-900">
