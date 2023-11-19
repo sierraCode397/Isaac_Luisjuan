@@ -64,7 +64,7 @@ export default function Profile() {
                     <div className="py-6 px-3 mt-32 sm:mt-0">
                       <Link
                         href='https://mx.linkedin.com/in/isaac-luisjuan-guerrero-b016b0258'
-                        className=" bg-pink-500 active:bg-gray-900 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1"
+                        className=" bg-yellow-600 active:bg-gray-900 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1"
                         style={{ transition: "all .15s ease" }}
                       >
                         Connect
