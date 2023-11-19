@@ -9,8 +9,9 @@ const Portafolio = () => {
   return (
     <section id='portfolio' className="bg-gray-900">
         <div className="container px-6 py-10 mx-auto">
-            <h1 className="text-2xl font-semibold text-center capitalize lg:text-4xl text-white">Portfolio
-            </h1>
+        <h1 className="text-2xl font-semibold text-center capitalize lg:text-3xl relative">
+            <span className="bg-gradient-to-r from-blue-600 to-purple-700 text-transparent bg-clip-text hover:lg:text-4xl hover:text-3xl">portfolio</span>
+          </h1>
 
             <p className="mt-4 text-center text-gray-200">
                 Welcome to the project gallery. Below I present a selected sample of my most recent works, each of which signifies a commitment to continuous learning and improving the quality of my software.

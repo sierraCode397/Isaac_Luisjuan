@@ -11,8 +11,9 @@ const { useMiContexto }= require ('./../hooks/useContext');
       <div id='certificates' className="bg-gray-100" style={{ overflowX: 'hidden' }}> {/* Cambiado overflow-x-auto a overflow-x-hidden */}
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-12 sm:py-16 lg:max-w-none lg:py-20">
-            <h2 className="text-2xl font-bold text-gray-900">Certifications</h2>
-
+          <h1 className="text-2xl font-semibold text-center capitalize lg:text-3xl relative">
+            <span className="bg-gradient-to-r from-yellow-600 to-black text-transparent bg-clip-text hover:lg:text-4xl hover:text-3xl">Certificates</span>
+          </h1>
             <div className="mt-6 space-x-4">
               <div className="lg:flex lg:space-x-4 lg:py-4">
                 <div

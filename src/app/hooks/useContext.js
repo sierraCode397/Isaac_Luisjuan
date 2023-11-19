@@ -54,7 +54,7 @@ export const MiContextoProvider = ({ children }) => {
 
       setInterval(() => {
         fetchData();
-      }, 840000);
+      }, 600000);
 
     return <MiContexto.Provider value={contextValue}>{children}</MiContexto.Provider>;
 };
