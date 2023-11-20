@@ -53,7 +53,9 @@ export const MiContextoProvider = ({ children }) => {
       };
 
       setInterval(() => {
+        
         fetchData();
+        console.log("Se hizo Loop a la API")
       }, 600000);
 
     return <MiContexto.Provider value={contextValue}>{children}</MiContexto.Provider>;

@@ -1,5 +1,6 @@
 'use client'
 
+import style from "./../styles/styles.module.css";
 const { useMiContexto }= require ('./../hooks/useContext');
 
 
@@ -19,30 +20,30 @@ const { useMiContexto }= require ('./../hooks/useContext');
                 <div
                   style={{
                     display: 'flex',
-                    overflowX: 'scroll', // Cambiado a overflow-x-scroll
+                    overflowX: 'auto', // Cambiado a overflow-x-scroll
                     WebkitOverflowScrolling: 'touch',
                     margin: '0 -10px',
                   }}
                 >
-                  {certificateItems?.map((product) => (
-                    <div key={product.name} className="group relative flex-shrink-0" style={{ margin: '0 10px' }}>
-                      <div className="relative h-64 w-80 overflow-hidden rounded-lg bg-white">
-                        <img
-                          src={product.image}
-                          className="h-full w-full object-cover object-center"
-                          alt={product.name}
-                          style={{ maxHeight: '256px' }}
-                        />
-                      </div>
-                      <h3 className="mt-6 text-sm text-gray-500">
-                        <a href={product.image}>
-                          <span className="absolute inset-0" />
-                        </a>
-                      </h3>
-                      <p className="text-base font-semibold text-gray-900">{product.name}</p>
-                    </div>
-                  ))}
 
+                    {certificateItems?.map((product) => (
+                      <div key={product.name} className="group relative flex-shrink-0" style={{ margin: '0 10px' }}>
+                        <div className="relative h-64 w-80 overflow-hidden rounded-lg bg-white">
+                          <img
+                            src={product.image}
+                            className="h-full w-full object-cover object-center"
+                            alt={product.name}
+                            style={{ maxHeight: '256px' }}
+                          />
+                        </div>
+                        <h3 className="mt-6 text-sm text-gray-500">
+                          <a href={product.image}>
+                            <span className="absolute inset-0" />
+                          </a>
+                        </h3>
+                        <p className="text-base font-semibold text-gray-900">{product.name}</p>
+                      </div>
+                    ))}
                 </div>
               </div>
             </div>

@@ -9,8 +9,8 @@ const Portafolio = () => {
   return (
     <section id='portfolio' className="bg-gray-900">
         <div className="container px-6 py-10 mx-auto">
-        <h1 className="text-2xl font-semibold text-center capitalize lg:text-3xl relative">
-            <span className="bg-gradient-to-r from-blue-600 to-purple-700 text-transparent bg-clip-text hover:lg:text-4xl hover:text-3xl">portfolio</span>
+        <h1 className="text-3xl font-semibold text-center capitalize lg:text-3xl relative">
+            <span className="bg-gradient-to-r from-blue-600 to-purple-700 text-transparent bg-clip-text hover:lg:text-4xl hover:text-4xl">Portfolio</span>
           </h1>
 
             <p className="mt-4 text-center text-gray-200">
@@ -38,15 +38,15 @@ const Portafolio = () => {
                             </span>
 
                             <p className="mt-4 text-lg tracking-wider font-extrabold text-blue-500 uppercase relative hover:animate-bounce group">
-                                {proyect.name}
+                                <span className="bg-gradient-to-r from-blue-600 to-purple-400 text-transparent bg-clip-text">{proyect.name}</span>
                                 <span className="absolute bottom-0 left-0 w-0 bg-black h-px transition-all duration-1000 group-hover:w-full group-hover:bg-white"></span>
                             </p>
 
                             <h2 className="mt-2 text-lg font-normal font-sans text-white ">{proyect.description}</h2>
 
                             {/* Aplicamos cursor-pointer solo a las etiquetas <a> */}
-                            <a href={proyect.code} className="mt-2 text-lg tracking-wider font-semibold text-blue-600 uppercase hover:text-blue-900 cursor-pointer">Code</a>
-                            <a href={proyect.link} className="mt-2 text-lg tracking-wider font-semibold text-blue-600 uppercase hover:text-blue-900 cursor-pointer">Website</a>
+                            <a href={proyect.code} className="mt-2 text-lg tracking-wider font-semibold text-blue-400 uppercase hover:text-blue-900 cursor-pointer">Code</a>
+                            <a href={proyect.link} className="mt-2 text-lg tracking-wider font-semibold text-blue-400 uppercase hover:text-blue-900 cursor-pointer">Website</a>
                         </div>
                     </div>
                   ))}

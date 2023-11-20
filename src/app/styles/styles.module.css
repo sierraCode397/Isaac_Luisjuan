@@ -1,0 +1,19 @@
+/* Definición de la animación */
+@keyframes infiniteScroll {
+    0% {
+      /* Estilos iniciales */
+      /* Puedes agregar los estilos iniciales aquí */
+    }
+    100% {
+      /* Estilos finales */
+      /* Puedes agregar los estilos finales aquí */
+    }
+  }
+  
+  /* Aplicar la animación */
+  .infinite {
+    display: flex;
+    gap: 0.5rem;
+    animation: infiniteScroll 5s linear infinite;
+  }
+  
