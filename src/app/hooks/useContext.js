@@ -8,7 +8,9 @@ const { config } = require('./../config/config');
 // Crear el contexto
 const MiContexto = createContext();
 
+
 const fetchData = async () => {
+  
   try {
     const response = await fetch('https://node-autentication-app.onrender.com/api/v1/portafolios');
 
@@ -53,9 +55,8 @@ export const MiContextoProvider = ({ children }) => {
       };
 
       setInterval(() => {
-        
-        fetchData();
-        console.log("Se hizo Loop a la API")
+        window.location.reload();
+        console.log("Se recargo la pagina")
       }, 600000);
 
     return <MiContexto.Provider value={contextValue}>{children}</MiContexto.Provider>;
