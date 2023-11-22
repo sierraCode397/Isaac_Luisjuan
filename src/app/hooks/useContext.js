@@ -55,9 +55,9 @@ export const MiContextoProvider = ({ children }) => {
       };
 
       setInterval(() => {
-        window.location.reload();
-        console.log("Se recargo la pagina")
-      }, 600000);
+        fetchData();
+        console.log("Se hizo loop a la API")
+      }, 360000);
 
     return <MiContexto.Provider value={contextValue}>{children}</MiContexto.Provider>;
 };
