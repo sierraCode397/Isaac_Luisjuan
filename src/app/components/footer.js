@@ -72,7 +72,7 @@ const Footer = () => {
                             <h3 className="uppercase text-white">Contact</h3>
                             <span className="block mt-2 text-sm text-gray-400 hover:underline">+52 341 411 2817</span>
                             <span href='' className="block mt-2 text-sm text-gray-400 hover:underline">isaacluisjuan0@gmail.com</span>
-                            <Link href="https://drive.google.com/file/d/1cZ33UsIL9e2t673VzwFOchln09le0-f8/view?usp=share_link" className="block mt-2 text-sm text-gray-400 hover:underline">Curriculum</Link>
+                            <Link href="https://drive.google.com/file/d/1UOlzrJDHbKSS5w9SMPusmh4wIH9REkVp/view?usp=sharing" className="block mt-2 text-sm text-gray-400 hover:underline">Curriculum</Link>
                         </div>
                     </div>
                 </div>
