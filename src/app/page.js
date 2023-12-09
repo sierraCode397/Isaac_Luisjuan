@@ -19,7 +19,6 @@ export default function Home() {
           <div className="container mx-auto pb-10 bg-black" />
         <Skills />
         <Certificates />
-          <div className="container mx-auto pb-10 bg-black" />
         <Footer />
     </MiContextoProvider>
 

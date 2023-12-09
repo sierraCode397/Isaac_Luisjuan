@@ -29,7 +29,7 @@ export default function Navbar(props) {
             <li className="flex items-center">
                 <a
                 href="https://wa.me/3414112817"
-                  className="text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                  className="text-gray-800 text-xs rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
                   style={{ transition: "all .15s ease" }}
                 >
                   <img className="hover:animate-bounce w-10 h-10 fill-current" src="https://imgur.com/VloprFd.jpg"></img>
@@ -39,7 +39,7 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <a
                   href="https://mx.linkedin.com/in/isaac-luisjuan-guerrero-b016b0258"
-                  className="text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                  className="text-gray-800  text-xs rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
                   style={{ transition: "all .15s ease" }}
                 >
                   <img className="hover:animate-bounce w-10 h-10 fill-current" src="https://imgur.com/JnZ4Jfb.jpg"></img>
@@ -49,7 +49,7 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <a
                   href="https://github.com/sierraCode397"
-                  className="text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                  className="text-gray-800  text-xs rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
                   style={{ transition: "all .15s ease" }}
                 >
                     <svg className="hover:animate-bounce fill-white w-10 h-10 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

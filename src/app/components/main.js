@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Navbar from "./../common/nav";
 const { useMiContexto }= require ('./../hooks/useContext');
+import Cobe from './../common/cobe'
 
 export default function Profile() {
 
@@ -13,18 +14,9 @@ export default function Profile() {
       <Navbar transparent />
       <main className="profile-page">
         <section className="relative block" style={{ height: "500px" }}>
-          <div
-            className="absolute top-0 w-full h-full bg-center bg-cover"
-            style={{
-              backgroundImage:
-                "url('https://i.imgur.com/tZ8uYr0.jpg')"
-            }}
-          >
-            <span
-              id="blackOverlay"
-              className="w-full h-full absolute opacity-50 bg-black"
-            ></span>
-          </div>
+
+          <Cobe />
+
           <div
             className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
             style={{ height: "70px" }}
