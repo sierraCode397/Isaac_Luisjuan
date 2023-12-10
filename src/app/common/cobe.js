@@ -48,7 +48,7 @@ export default function Cobe2() {
         if (!pointerInteracting.current) {
           // Called on every animation frame.
           // `state` will be an empty object, return updated params.
-          phi += 0.003
+          phi += 0.002
         } 
         state.phi = phi + r.get()
         state.width = width * 2
@@ -57,7 +57,7 @@ export default function Cobe2() {
     })
     setTimeout(() => canvasRef.current.style.opacity = '1')
     return () => globe.destroy()
-  }, [])
+  }, [r])
 
   return  ( 
     <div style={{
@@ -66,7 +66,8 @@ export default function Cobe2() {
         aspectRatio: 1,
         margin: 'auto',
         position: 'relative',
-        }}>
+        }}
+        className="bg-black">
         <canvas
         ref={canvasRef}
         onPointerDown={(e) => {
