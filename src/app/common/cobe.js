@@ -1,20 +1,49 @@
 'use client'
 
 import styles from "./../styles/cobe.module.css";
-
 import createGlobe from "cobe";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Cobe() {
   const canvasRef = useRef();
+  const [miVariable, setMiVariable] = useState(650);
+
+    // Función para cambiar la variable según el ancho de la pantalla
+    const ajustarVariable = () => {
+        if (window.innerWidth < 600) {
+          setMiVariable(400);
+        } 
+        else {
+          setMiVariable(650);
+        }
+      };
+
+        // Efecto para suscribirse al evento de cambio de tamaño de la ventana
+  useEffect(() => {
+    // Llamamos a la función inicialmente para establecer el valor inicial
+    ajustarVariable();
+
+    // Evento de cambio de tamaño de la ventana
+    const handleResize = () => {
+      ajustarVariable();
+    };
+
+    // Suscribirse al evento de cambio de tamaño de la ventana
+    window.addEventListener("resize", handleResize);
+
+    // Limpiar el efecto al desmontar el componente
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); 
 
   useEffect(() => {
     let phi = 0;
 
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: 2,
-      width: 600 * 2,
-      height: 600 * 2,
+      width: miVariable * 2,
+      height: miVariable * 2,
       phi: 0,
       theta: 0,
       dark: 1,
@@ -40,14 +69,14 @@ export default function Cobe() {
     return () => {
       globe.destroy();
     };
-  }, []);
+  }, [miVariable]);
 
   return (
     <div className="bg-black text-white flex items-center justify-center"> 
         <div className={styles.App}>
         <canvas
             ref={canvasRef}
-            style={{ width: 600, height: 600, maxWidth: "100%", aspectRatio: 1 }}
+            style={{ width: miVariable, height: miVariable, maxWidth: "100%", aspectRatio: 1 }}
         />
         </div>
     </div>
