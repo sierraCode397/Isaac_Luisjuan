@@ -1,10 +1,11 @@
 'use client'
 
 import createGlobe from "cobe";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSpring } from '@react-spring/web';
 
 export default function Cobe2() {
+  const [miVariable, setMiVariable] = useState(40000);
   const canvasRef = useRef();
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
@@ -17,6 +18,34 @@ export default function Cobe2() {
       precision: 0.001,
     },
   }));
+
+  const ajustarVariable = () => {
+    if (window.innerWidth < 600) {
+      setMiVariable(16000);
+    } 
+    else {
+      setMiVariable(40000);
+    }
+  };
+
+  useEffect(() => {
+    // Llamamos a la función inicialmente para establecer el valor inicial
+    ajustarVariable();
+
+    // Evento de cambio de tamaño de la ventana
+    const handleResize = () => {
+      ajustarVariable();
+    };
+
+    // Suscribirse al evento de cambio de tamaño de la ventana
+    window.addEventListener("resize", handleResize);
+
+    // Limpiar el efecto al desmontar el componente
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); 
+
   useEffect(() => {
     let phi = 0;
     let width = 0;
@@ -31,7 +60,7 @@ export default function Cobe2() {
       theta: 0,
       dark: 1,
       diffuse: 0,
-      mapSamples: 40000,
+      mapSamples: miVariable,
       mapBrightness: 12,
       baseColor: [1, 1, 1],
       markerColor: [0.2, 1, 0.2],
@@ -57,7 +86,7 @@ export default function Cobe2() {
     })
     setTimeout(() => canvasRef.current.style.opacity = '1')
     return () => globe.destroy()
-  }, [r])
+  }, [miVariable, r])
 
   return  ( 
     <div style={{
