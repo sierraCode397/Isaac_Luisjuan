@@ -100,7 +100,7 @@ export default function Profile() {
                   
                   <div className="mb-2 text-gray-700 mt-8">
                     <i className="fas fa-briefcase mr-2 text-lg text-gray-500"></i>
-                    Full Stack Debeloper
+                    Full Stack Developer
                   </div>
                   <div className="mb-12 text-gray-700">
                     <i className="fas fa-university mr-2 text-lg text-gray-500"></i>
