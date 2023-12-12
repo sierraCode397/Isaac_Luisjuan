@@ -1,32 +1,15 @@
 import InfiniteHorizontalScroller from "./InfiniteHorizontalScroll";
 
-const rows = 1;
-const duration = 300000; // must be greater than 5000
-const tagsPerRow = 5;
+const rows = 2;
+const duration = 100000; // must be greater than 5000
 
-const skills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "Typescript",
-  "Tailwind",
-  "React",
-  "Next.js",
-  "Gatsby",
-  "UI/UX",
-  "Git",
-  "animation",
-  "webdev",
-  
-];
-
-const SkillsScroller = () => {
+const SkillsScroller = ({certificateItems, direction}) => {
   return (
     <InfiniteHorizontalScroller
       duration={duration}
       rows={rows}
-      tags={skills}
-      tagsPerRow={tagsPerRow}
+      tags={certificateItems}
+      direction={direction}
     />
   );
 };

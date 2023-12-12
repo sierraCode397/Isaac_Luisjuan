@@ -32,15 +32,15 @@ export default function Cobe2() {
       dark: 1,
       diffuse: 0,
       mapSamples: 40000,
-      mapBrightness: 1.2,
+      mapBrightness: 12,
       baseColor: [1, 1, 1],
       markerColor: [0.2, 1, 0.2],
-      glowColor: [0.5, 0.7, 0.7],
-      opacity:0.80,
+      glowColor: [0.7, 0.7, 0.7],
+      opacity:0.97,
       markers: [
-        { location: [19.7008, -103.4665], size: 0.1 }, //Mexico, Guadalajara
-        { location: [46.8182, 8.2275], size: 0.1 }, //Suiza, Berma
-        { location: [-35.2820, 149.1286], size: 0.1 }, //Australia, Canberra
+        { location: [19.7008, -103.4665], size: 0.07 }, //Mexico, Guadalajara
+        { location: [46.8182, 8.2275], size: 0.07 }, //Suiza, Berma
+        { location: [-35.2820, 149.1286], size: 0.07 }, //Australia, Canberra
 
       ],
       onRender: (state) => {
@@ -62,7 +62,7 @@ export default function Cobe2() {
   return  ( 
     <div style={{
         width: '100%',
-        maxWidth: 600,
+        maxWidth: 700,
         aspectRatio: 1,
         margin: 'auto',
         position: 'relative',
@@ -88,7 +88,7 @@ export default function Cobe2() {
             const delta = e.clientX - pointerInteracting.current;
             pointerInteractionMovement.current = delta;
             api.start({
-                r: delta / 200,
+                r: delta / 100,
             });
             }
         }}
@@ -97,7 +97,7 @@ export default function Cobe2() {
             const delta = e.touches[0].clientX - pointerInteracting.current;
             pointerInteractionMovement.current = delta;
             api.start({
-                r: delta / 100,
+                r: delta / 10,
             });
             }
         }}
