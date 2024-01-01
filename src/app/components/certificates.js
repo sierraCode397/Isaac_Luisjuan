@@ -25,8 +25,7 @@ import SkillsScroller from "../helper/SkillScroller";
                   }}
                 >
 
-                    <SkillsScroller certificateItems={certificateItems} direction={"reverse"} />
-
+                    <SkillsScroller Items={certificateItems} direction={"normal"} rows={2} />
 
                 </div>
               </div>

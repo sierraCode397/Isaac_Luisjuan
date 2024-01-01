@@ -1,14 +1,13 @@
 import InfiniteHorizontalScroller from "./InfiniteHorizontalScroll";
 
-const rows = 2;
 const duration = 100000; // must be greater than 5000
 
-const SkillsScroller = ({certificateItems, direction}) => {
+const SkillsScroller = ({Items, direction, rows}) => {
   return (
     <InfiniteHorizontalScroller
       duration={duration}
       rows={rows}
-      tags={certificateItems}
+      tags={Items}
       direction={direction}
     />
   );

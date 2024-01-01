@@ -4,6 +4,7 @@ import Portafolio from "./components/portafolio";
 import Skills from "./components/skills";
 import Certificates from './components/certificates'
 import Footer from './components/footer'
+import SkillsScroller from "./helper/SkillScroller";
 import { MiContextoProvider } from './hooks/useContext';
 
 
@@ -12,11 +13,8 @@ export default function Home() {
 
     <MiContextoProvider>
         <Master />
-          <div className="container mx-auto pb-10 bg-black" />
         <Description />
-          <div className="container mx-auto pb-10 bg-black" />
         <Portafolio />
-          <div className="container mx-auto pb-10 bg-black" />
         <Skills />
         <Certificates />
         <Footer />

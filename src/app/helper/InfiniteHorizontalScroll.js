@@ -6,7 +6,7 @@ const InfiniteHorizontalScroller = ({
   duration = 15000,
   rows = 5,
   tags,
-  direction
+  direction,
 }) => {
 
   return (
@@ -18,7 +18,7 @@ const InfiniteHorizontalScroller = ({
           reverse={Boolean(i % 2)}
           direction={direction}
         >
-              <Tag certificateItems={tags} key="" />
+              <Tag Items={tags} key="" />
         </InfiniteHorizontalScrollWrapper>
       ))}
       <div className="pointer-events-none absolute inset-0 overflow-hidden" />

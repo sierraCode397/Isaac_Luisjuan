@@ -4,14 +4,15 @@ const InfiniteHorizontalScrollWrapper = ({
     children,
     duration,
     reverse = false,
-    direction 
+    direction,
   }) => {
+
     return (
       <div
         className="flex w-fit"
         style={{
           animation: `loop ${duration}ms linear infinite ${
-            reverse ? "reverse" : "normal"
+            reverse ? "reverse" : "normal"  
           }`,
         }}
       >

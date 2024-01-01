@@ -1,9 +1,9 @@
 "use client"
 
-export default function TagCertificate({ certificateItems }) {
+export default function TagCertificate({ Items }) {
   return (
     <>
-      {certificateItems.map((product) => (
+      {Items.map((product) => (
         <div key={product.name} className="group relative flex-shrink-0" style={{ margin: '0 10px'}}>
           <div className="relative h-42 w-60 md:h-64 md:w-80 overflow-hidden rounded-lg bg-white">
             <img
