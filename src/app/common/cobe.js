@@ -9,7 +9,8 @@ export default function Cobe2() {
   const canvasRef = useRef();
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
-  const [{ r }, api] = useSpring(() => ({
+  const [{ r, l }, api] = useSpring(() => ({
+    l: 0,
     r: 0,
     config: {
       mass: 1,
@@ -47,7 +48,7 @@ export default function Cobe2() {
   }, []); 
 
   useEffect(() => {
-    let phi = 0;
+    let phi = 2;
     let theta = 0;
     let width = 0;
     const onResize = () => canvasRef.current && (width = canvasRef.current.offsetWidth)
@@ -78,17 +79,13 @@ export default function Cobe2() {
         if (!pointerInteracting.current) {
           // Called on every animation frame.
           // `state` will be an empty object, return updated params.
-          phi += 0.002
-          theta += 0.002
         } 
         
-        state.theta = theta + r.get()
         state.phi = phi + r.get()
+        state.theta = theta + l.get()
         state.width = width * 2
         state.height = width * 2
-        
 
-        console.log(r);
       }
     })
     setTimeout(() => canvasRef.current.style.opacity = '1')
@@ -115,7 +112,10 @@ export default function Cobe2() {
         onPointerDown={(e) => {
             pointerInteracting.current =
             e.clientX - pointerInteractionMovement.current;
+            e.clientY - pointerInteractionMovement.current;
             canvasRef.current.style.cursor = 'grabbing';
+            console.log("PointerInteracting " + pointerInteracting.current)
+            /* console.log("hola Pointer " + e.clientX + " Y " + e.clientY) */
         }}
         onPointerUp={() => {
             pointerInteracting.current = null;
@@ -127,12 +127,19 @@ export default function Cobe2() {
         }}
         onMouseMove={(e) => {
             if (pointerInteracting.current !== null) {
+            const bravo = e.clientY - pointerInteracting.current;
+            pointerInteractionMovement.current = bravo;
             const delta = e.clientX - pointerInteracting.current;
             pointerInteractionMovement.current = delta;
+
+            console.log("Delta " + delta)
             api.start({
+                l: bravo / 100,
                 r: delta / 100,
             });
             }
+            /* console.log("Hola mouse X " + e.clientX + " Y " + e.clientY) */
+
         }}
         onTouchMove={(e) => {
             if (pointerInteracting.current !== null && e.touches[0]) {
