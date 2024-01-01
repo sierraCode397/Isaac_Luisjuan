@@ -48,6 +48,7 @@ export default function Cobe2() {
 
   useEffect(() => {
     let phi = 0;
+    let theta = 0;
     let width = 0;
     const onResize = () => canvasRef.current && (width = canvasRef.current.offsetWidth)
     window.addEventListener('resize', onResize)
@@ -57,7 +58,7 @@ export default function Cobe2() {
       width: width * 2,
       height: width * 2,
       phi: 0,
-      theta: 0,
+      theta: 0,      
       dark: 1,
       diffuse: 0,
       mapSamples: miVariable,
@@ -78,15 +79,27 @@ export default function Cobe2() {
           // Called on every animation frame.
           // `state` will be an empty object, return updated params.
           phi += 0.002
+          theta += 0.002
         } 
+        
+        state.theta = theta + r.get()
         state.phi = phi + r.get()
         state.width = width * 2
         state.height = width * 2
+        
+
+        console.log(r);
       }
     })
     setTimeout(() => canvasRef.current.style.opacity = '1')
     return () => globe.destroy()
   }, [miVariable, r])
+
+/*   setInterval(() => {
+    theta ++
+  }, 1000); */
+
+
 
   return  ( 
     <div style={{
@@ -142,3 +155,4 @@ export default function Cobe2() {
     </div>
   )
 }
+
