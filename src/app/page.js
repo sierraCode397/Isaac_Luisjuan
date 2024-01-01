@@ -5,6 +5,7 @@ import Skills from "./components/skills";
 import Certificates from './components/certificates'
 import Footer from './components/footer'
 import SkillsScroller from "./helper/SkillScroller";
+import Link from 'next/link';
 import { MiContextoProvider } from './hooks/useContext';
 
 
@@ -13,7 +14,9 @@ export default function Home() {
 
     <MiContextoProvider>
         <Master />
+          <SkillsScroller className="bg-white" rows={3} />
         <Description />
+          <SkillsScroller className="bg-white" rows={3} />
         <Portafolio />
         <Skills />
         <Certificates />

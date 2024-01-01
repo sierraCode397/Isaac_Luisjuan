@@ -5,7 +5,7 @@ import SkillsScroller from "../helper/SkillScroller";
 
   export default function Certificates() {
 
-  const { certificateItems, skillItem } = useMiContexto();
+  const { certificateItems } = useMiContexto();
 
     return (
       <div id='certificates' className="bg-gray-100" style={{ overflowX: 'hidden' }}> {/* Cambiado overflow-x-auto a overflow-x-hidden */}
@@ -25,7 +25,7 @@ import SkillsScroller from "../helper/SkillScroller";
                   }}
                 >
 
-                    <SkillsScroller Items={certificateItems} direction={"normal"} rows={2} />
+                    <SkillsScroller Items={certificateItems} direction={"normal"} rows={3} />
 
                 </div>
               </div>

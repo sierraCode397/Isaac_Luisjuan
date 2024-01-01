@@ -1,5 +1,5 @@
 import InfiniteHorizontalScrollWrapper from "./InfiniteHorizontalScrollWrapper";
-import Tag from "./TagCertificate";
+import Tag from "./TagCeparate";
 import { random } from "../config/random";
 
 const InfiniteHorizontalScroller = ({
@@ -10,7 +10,7 @@ const InfiniteHorizontalScroller = ({
 }) => {
 
   return (
-    <div className="flex flex-col shrink-0 gap-y-4 relative py-6 overflow-hidden" >
+    <div className="flex flex-col shrink-0 gap-y-4 relative py-4 bg-black overflow-hidden" >
       {[...new Array(rows)].map((_, i) => (
         <InfiniteHorizontalScrollWrapper
           key={i}
@@ -18,7 +18,7 @@ const InfiniteHorizontalScroller = ({
           reverse={Boolean(i % 2)}
           direction={direction}
         >
-              <Tag Items={tags} key="" />
+              <Tag  />
         </InfiniteHorizontalScrollWrapper>
       ))}
       <div className="pointer-events-none absolute inset-0 overflow-hidden" />
