@@ -7,7 +7,7 @@ const Portafolio = () => {
     const { portafolioItems } = useMiContexto();
 
   return (
-    <section id='portfolio' className="bg-gray-800">
+    <section id='portfolio' className="bg-gray-900">
         <div className="container px-6 py-10 mx-auto">
         <h1 className="text-3xl font-semibold text-center capitalize relative">
             <span className="bg-gradient-to-r from-blue-600 to-purple-700 text-transparent bg-clip-text hover:text-4xl">Portfolio</span>

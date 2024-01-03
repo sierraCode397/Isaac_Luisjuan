@@ -10,7 +10,7 @@ const InfiniteHorizontalScroller = ({
 }) => {
 
   return (
-    <div className="flex flex-col shrink-0 gap-y-4 relative py-4 bg-black overflow-hidden" >
+    <div className="flex flex-col shrink-0 gap-y-3 relative py-2 bg-black overflow-hidden" >
       {[...new Array(rows)].map((_, i) => (
         <InfiniteHorizontalScrollWrapper
           key={i}
