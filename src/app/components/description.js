@@ -8,8 +8,10 @@ export default function Description() {
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
           <img className="mx-auto h-14" src="https://imgur.com/e2TOmcF.jpg" alt="" />
           <figure className="mt-10">
-            <blockquote className="text-center text-xl font-semibold leading-8 text-white-900 sm:text-2xl sm:leading-9">
-              <p>
+            <blockquote className="text-center text-xl font-semibold leading-8 sm:text-2xl sm:leading-9">
+              <p  style={{
+                    color: '#e5e7eb'
+                  }}>
                 “I am  passionate about software development, specializing in both front-end and back-end web development. 
                 Here, you will discover a digital space where creativity meets functionality. ¡Explore, 
                 discover and join this journey of code and creation! 🚀✨.”
@@ -22,11 +24,21 @@ export default function Description() {
                 alt=""
               />
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                <div className="font-semibold text-white-900">Isaac Luisjuan</div>
+                <div style={{
+                    color: '##e5e7eb'
+                  }}
+                  className="font-semibold">
+                    Isaac Luisjuan
+                </div>
                 <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-white-900">
                   <circle cx={1} cy={1} r={1} />
                 </svg>
-                <div className="text-white-600">Full-Stack Developer Node | Next</div>
+                <div style={{
+                    color: '##e5e7eb'
+                  }}
+                  >
+                    Full-Stack Developer Node | Next
+                </div>
               </div>
             </figcaption>
           </figure>

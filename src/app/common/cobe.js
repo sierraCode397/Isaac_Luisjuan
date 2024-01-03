@@ -81,7 +81,7 @@ export default function Cobe2() {
         if (!pointerInteracting.current) {
           // Called on every animation frame.
           // `state` will be an empty object, return updated params.
-        phi += 0.002
+        phi += 0.0005
         }         
         state.phi = phi + r.get()
         state.theta = theta + l.get()

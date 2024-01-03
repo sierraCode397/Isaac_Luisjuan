@@ -26,9 +26,7 @@ import InfiniteHorizontalScroller from "../helper/InfiniteHorizontalScroll";
                     margin: '0 -10px',
                   }}
                 >
-                  <div className="bg-gray-100">
-                    <InfiniteHorizontalScroller rows={2} direction={"normal"} tag={TagCertificate} Items={certificateItems} duration={100000} />
-                  </div>
+                    <InfiniteHorizontalScroller rows={2} direction={"normal"} tag={TagCertificate} Items={certificateItems} duration={250000} />
                 </div>
               </div>
             </div>
