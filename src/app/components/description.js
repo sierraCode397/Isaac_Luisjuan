@@ -25,19 +25,19 @@ export default function Description() {
               />
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
                 <div style={{
-                    color: '##e5e7eb'
+                    color: '#e5e7eb'
                   }}
                   className="font-semibold">
                     Isaac Luisjuan
                 </div>
-                <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-white-900">
+                <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-white">
                   <circle cx={1} cy={1} r={1} />
                 </svg>
                 <div style={{
-                    color: '##e5e7eb'
+                    color: '#e5e7eb'
                   }}
                   >
-                    Full-Stack Developer Node | Next
+                    Full-Stack Developer PERN Stack
                 </div>
               </div>
             </figcaption>

@@ -37,7 +37,7 @@ export default function Profile() {
             </svg>
           </div>
         </section>
-        <section className="relative py-16 bg-gray-900">
+        <section className="relative py-16" style={{background: '#151515'}}>
           <div className="container mx-auto px-4">
             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
               <div className="px-6">

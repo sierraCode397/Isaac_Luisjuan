@@ -10,7 +10,7 @@ const Skills = () => {
   return (
 <section id='skills' className="pt-12 text-gray-600 bg-gray-100">
   <h1 className="text-5xl font-semibold text-center capitalize relative text-black">
-    <span className="bg-gradient-to-r from-green-600 to-black text-transparent bg-clip-text hover:text-6xl">Skills</span>
+    <span className="text-black bg-clip-text hover:text-6xl">Skills</span>
   </h1>
     <div className="container px-10 py-10 mx-auto">
       <div className="flex flex-wrap">
