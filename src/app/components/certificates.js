@@ -1,7 +1,9 @@
 'use client'
 const { useMiContexto }= require ('../hooks/useContext');
 
-import SkillsScroller from "../helper/SkillScroller";
+import TagCertificate from "../helper/TagCertificate";
+import InfiniteHorizontalScroller from "../helper/InfiniteHorizontalScroll";
+
 
   export default function Certificates() {
 
@@ -24,9 +26,9 @@ import SkillsScroller from "../helper/SkillScroller";
                     margin: '0 -10px',
                   }}
                 >
-
-                    <SkillsScroller Items={certificateItems} direction={"normal"} rows={3} />
-
+                  <div className="bg-gray-100">
+                    <InfiniteHorizontalScroller rows={2} direction={"normal"} tag={TagCertificate} Items={certificateItems} duration={100000} />
+                  </div>
                 </div>
               </div>
             </div>

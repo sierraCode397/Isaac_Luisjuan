@@ -4,8 +4,8 @@ import Portafolio from "./components/portafolio";
 import Skills from "./components/skills";
 import Certificates from './components/certificates'
 import Footer from './components/footer'
-import SkillsScroller from "./helper/SkillScroller";
-import Link from 'next/link';
+import InfiniteHorizontalScroller from "./helper/InfiniteHorizontalScroll";
+import TagCeparate from "./helper/TagCeparate";
 import { MiContextoProvider } from './hooks/useContext';
 
 
@@ -14,9 +14,9 @@ export default function Home() {
 
     <MiContextoProvider>
         <Master />
-          <SkillsScroller className="bg-white" rows={3} />
+          <InfiniteHorizontalScroller rows={3} tag={TagCeparate} />
         <Description />
-          <SkillsScroller className="bg-white" rows={3} />
+          <InfiniteHorizontalScroller rows={3} tag={TagCeparate} background={"black"} />
         <Portafolio />
         <Skills />
         <Certificates />
