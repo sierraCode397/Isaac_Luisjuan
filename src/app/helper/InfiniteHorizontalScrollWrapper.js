@@ -17,7 +17,6 @@ const InfiniteHorizontalScrollWrapper = ({
         }}
       >
         {children}
-        {children}
       </div>
     );
   };

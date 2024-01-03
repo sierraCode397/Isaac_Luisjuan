@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { useSpring } from '@react-spring/web';
 
 export default function Cobe2() {
-  const [miVariable, setMiVariable] = useState(30000);
+  const [miVariable, setMiVariable] = useState(23000);
   const canvasRef = useRef();
   const pointerInteracting = useRef(null);
   const pointerInteractingY = useRef(null);
@@ -16,18 +16,18 @@ export default function Cobe2() {
     r: 0,
     config: {
       mass: 1,
-      tension: 280,
-      friction: 40,
+      tension: 100,
+      friction: 10,
       precision: 0.001,
     },
   }));
 
   const ajustarVariable = () => {
     if (window.innerWidth < 600) {
-      setMiVariable(16000);
+      setMiVariable(13000);
     } 
     else {
-      setMiVariable(30000);
+      setMiVariable(23000);
     }
   };
 
@@ -69,7 +69,7 @@ export default function Cobe2() {
       baseColor: [1, 1, 1],
       markerColor: [0.2, 1, 0.2],
       glowColor: [0.7, 0.7, 0.7],
-      opacity:0.97,
+      opacity: 1,
       markers: [
         { location: [19.7008, -103.4665], size: 0.07 }, //Mexico, Guadalajara
         { location: [46.8182, 8.2275], size: 0.07 }, //Suiza, Berma
@@ -93,16 +93,10 @@ export default function Cobe2() {
     return () => globe.destroy()
   }, [miVariable, r, l])
 
-/*   setInterval(() => {
-    theta ++
-  }, 1000); */
-
-
-
   return  ( 
     <div style={{
         width: '100%',
-        maxWidth: 700,
+        maxWidth: 600,
         aspectRatio: 1,
         margin: 'auto',
         position: 'relative',
@@ -145,8 +139,8 @@ export default function Cobe2() {
             const bravo = e.touches[0].clientY - pointerInteractingY.current;
             pointerInteractionMovementY.current = bravo;
             api.start({
-                r: delta / 10,
-                l: bravo / 10,
+                r: delta / 20,
+                l: bravo / 20,
             });
             }
         }}
@@ -155,7 +149,7 @@ export default function Cobe2() {
             height: '100%',
             cursor: 'grab',
             contain: 'layout paint size',
-            opacity: 0,
+            opacity: 1,
             transition: 'opacity 1s ease',
         }}
         />

@@ -12,7 +12,7 @@ import InfiniteHorizontalScroller from "../helper/InfiniteHorizontalScroll";
     return (
       <div id='certificates' className="bg-gray-100" style={{ overflowX: 'hidden' }}> {/* Cambiado overflow-x-auto a overflow-x-hidden */}
         <div className="mx-auto  ">
-          <div className="mx-auto  py-12 sm:py-16 lg:max-w-none lg:py-20">
+          <div className="mx-auto  py-8 lg:max-w-none ">
           <h1 className="text-3xl font-semibold text-center capitalize relative">
             <span className="bg-gradient-to-r from-yellow-600 to-black text-transparent bg-clip-text hover:text-4xl">Certificates</span>
           </h1>
@@ -26,7 +26,7 @@ import InfiniteHorizontalScroller from "../helper/InfiniteHorizontalScroll";
                     margin: '0 -10px',
                   }}
                 >
-                    <InfiniteHorizontalScroller rows={2} direction={"normal"} tag={TagCertificate} Items={certificateItems} duration={250000} />
+                    <InfiniteHorizontalScroller rows={2} direction={"normal"} tag={TagCertificate} Items={certificateItems} duration={125000} />
                 </div>
               </div>
             </div>
