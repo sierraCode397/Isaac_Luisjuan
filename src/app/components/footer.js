@@ -2,6 +2,8 @@ import React from 'react'
 import Link from "next/link"
 
 const Footer = () => {
+    let fechaActual = new Date();
+    let añoActual = fechaActual.getUTCFullYear();
   return (
     <footer style={{background: '#151515'}}>
         <div className="container p-16 mx-auto"> 
@@ -81,7 +83,7 @@ const Footer = () => {
             <hr className="h-px my-6 bg-gray-200 border-none dark:bg-gray-700" />
 
             <div>
-                <p className="text-center text-gray-500">© SierraCode397 2023 - All rights reserved</p>
+                <p className="text-center text-gray-500">Copyright © 2023 - {añoActual}, SierraCode397</p>
             </div>
         </div>
     </footer>
