@@ -36,7 +36,7 @@ export default function Description() {
                     color: '#e5e7eb'
                   }}
                   >
-                    Full-Stack Developer | PERN Stack
+                    Full-Stack Developer | JavaScript | Node |SQL
                 </div>
               </div>
             </figcaption>
