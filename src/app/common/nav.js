@@ -1,16 +1,45 @@
 'use client'
 
 import React from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar(props) {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(true);
+
+  const ajustarVariable = () => {
+    if (window.innerWidth > 1030) {
+      setNavbarOpen(true);
+    } 
+    else {
+      setNavbarOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Llamamos a la función inicialmente para establecer el valor inicial
+    ajustarVariable();
+
+    // Evento de cambio de tamaño de la ventana
+    const handleResize = () => {
+      ajustarVariable();
+    };
+
+    // Suscribirse al evento de cambio de tamaño de la ventana
+    window.addEventListener("resize", handleResize);
+
+    // Limpiar el efecto al desmontar el componente
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); 
+
   return (
     <>
       <nav
-        className="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
+        className="absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
       >
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-evenly">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <div className=" relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
               className="text-white text-lg font-bold leading-relaxed inline-block whitespace-nowrap uppercase hover:underline hover:animate-bounce"
               href="https://github.com/sierraCode397"
@@ -18,8 +47,11 @@ export default function Navbar(props) {
               Sierra-Code-397
             </a>
           </div>
-          <div className="flex items-center flex-wrap justify-between px-8">
-            <div className="px-4">
+
+          <div
+            className={"flex items-center flex-wrap justify-between lg:px-8" + (navbarOpen ? " lg:px-4" : " hidden")}
+          >
+            <div className="px-4 ">
               Description
             </div>
             <div className="px-4">
