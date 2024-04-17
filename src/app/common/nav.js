@@ -9,7 +9,7 @@ export default function Navbar(props) {
       <nav
         className="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
       >
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div className="container px-4 mx-auto flex flex-wrap items-center justify-evenly">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
               className="text-white text-lg font-bold leading-relaxed inline-block whitespace-nowrap uppercase hover:underline hover:animate-bounce"
@@ -18,19 +18,31 @@ export default function Navbar(props) {
               Sierra-Code-397
             </a>
           </div>
+          <div className="flex items-center flex-wrap justify-between px-8">
+            <div className="px-4">
+              Description
+            </div>
+            <div className="px-4">
+              Portfolio
+            </div>
+            <div className="px-4">
+              Skills
+            </div>
+            <div className="px-4">
+              Certifications
+            </div>
+          </div>
+          
           <div
             className={
-              "lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none" +
-              (navbarOpen ? " block rounded shadow-lg" : " hidden")
-            }
+              "flex items-center bg-black bg-transparent shadow-none"}
           >
-          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <ul className="flex flex-row list-none">
 
             <li className="flex items-center">
                 <a
                 href="https://wa.me/3414112817"
-                  className="text-gray-800 text-xs rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-                  style={{ transition: "all .15s ease" }}
+                  className="text-gray-800 text-xs rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-0 ml-3"
                 >
                   <img className="hover:animate-bounce w-10 h-10 fill-current" src="https://imgur.com/VloprFd.jpg"></img>
                 </a>
@@ -39,8 +51,7 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <a
                   href="https://mx.linkedin.com/in/isaac-luisjuan-guerrero-b016b0258"
-                  className="text-gray-800  text-xs rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-                  style={{ transition: "all .15s ease" }}
+                  className="text-gray-800  text-xs rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-0 ml-3"
                 >
                   <img className="hover:animate-bounce w-10 h-10 fill-current" src="https://imgur.com/JnZ4Jfb.jpg"></img>
                 </a>
@@ -49,8 +60,7 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <a
                   href="https://github.com/sierraCode397"
-                  className="text-gray-800  text-xs rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-                  style={{ transition: "all .15s ease" }}
+                  className="text-gray-800  text-xs rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-0 ml-3"
                 >
                     <svg className="hover:animate-bounce fill-white w-10 h-10 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
