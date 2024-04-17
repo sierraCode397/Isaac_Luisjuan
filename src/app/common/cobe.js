@@ -97,8 +97,8 @@ export default function Cobe2() {
 
   return  ( 
     <div style={{
-        width: '500',
-        maxWidth: 500,
+        width: '450',
+        maxWidth: 450,
         aspectRatio: 1,
         margin: 'auto',
         position: 'relative',

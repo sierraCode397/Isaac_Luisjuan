@@ -14,7 +14,6 @@ export default function Home() {
 
     <MiContextoProvider>
         <Master />
-          <InfiniteHorizontalScroller rows={3} tag={TagCeparate} background={"black"} duration={115000}/>
         <Description />
           <InfiniteHorizontalScroller rows={3} tag={TagCeparate} background={"black"} duration={115000}/>
         <Portafolio />
