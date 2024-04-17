@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { useSpring } from '@react-spring/web';
 
 export default function Cobe2() {
-  const [miVariable, setMiVariable] = useState(23000);
+  const [miVariable, setMiVariable] = useState(20000);
   const canvasRef = useRef();
   const pointerInteracting = useRef(null);
   const pointerInteractingY = useRef(null);
@@ -24,10 +24,10 @@ export default function Cobe2() {
 
   const ajustarVariable = () => {
     if (window.innerWidth < 600) {
-      setMiVariable(13000);
+      setMiVariable(12000);
     } 
     else {
-      setMiVariable(23000);
+      setMiVariable(20000);
     }
   };
 
@@ -66,9 +66,9 @@ export default function Cobe2() {
       diffuse: 0,
       mapSamples: miVariable,
       mapBrightness: 12,
-      baseColor: [1, 1, 1],
+      baseColor: [0.6, 0.6, 0.6],
       markerColor: [0.2, 1, 0.2],
-      glowColor: [0.7, 0.7, 0.7],
+      glowColor: [0.4, 0.4, 0.4],
       opacity: 1,
       markers: [
         { location: [19.7008, -103.4665], size: 0.07 }, //Mexico, Guadalajara
@@ -97,8 +97,8 @@ export default function Cobe2() {
 
   return  ( 
     <div style={{
-        width: '100%',
-        maxWidth: 600,
+        width: '500',
+        maxWidth: 500,
         aspectRatio: 1,
         margin: 'auto',
         position: 'relative',

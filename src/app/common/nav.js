@@ -1,13 +1,14 @@
 'use client'
 
 import React from "react";
+import Link from "next/link"
 import { useEffect, useState } from "react";
 
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = useState(true);
 
   const ajustarVariable = () => {
-    if (window.innerWidth > 1030) {
+    if (window.innerWidth > 770) {
       setNavbarOpen(true);
     } 
     else {
@@ -49,20 +50,24 @@ export default function Navbar(props) {
           </div>
 
           <div
-            className={"flex items-center flex-wrap justify-between lg:px-8" + (navbarOpen ? " lg:px-4" : " hidden")}
+            className=
+              {
+                "flex items-center flex-wrap justify-between lg:px-8" + 
+                (navbarOpen ? " lg:px-4" : " hidden")
+              }
           >
-            <div className="px-4 ">
-              Description
-            </div>
-            <div className="px-4">
+            <Link href="/#description" className="block px-4 text-sm text-white hover:underline">
+              MySelf
+            </Link>
+            <Link href="/#portfolio" className="block px-4 text-sm text-white hover:underline">
               Portfolio
-            </div>
-            <div className="px-4">
+            </Link>
+            <Link href="/#skills" className="block px-4 text-sm text-white hover:underline">
               Skills
-            </div>
-            <div className="px-4">
+            </Link>
+            <Link href="/#certificates" className="block px-4 text-sm text-white hover:underline">
               Certifications
-            </div>
+            </Link>
           </div>
           
           <div
