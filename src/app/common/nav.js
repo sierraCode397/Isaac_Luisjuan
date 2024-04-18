@@ -37,9 +37,9 @@ export default function Navbar(props) {
   return (
     <>
       <nav
-        className="absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3"
+        className="absolute z-50 w-full flex flex-wrap items-center justify-between py-3 "
       >
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-evenly">
+        <div className="container mx-auto flex flex-wrap items-center justify-evenly">
           <div className=" relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
               className="text-white text-lg font-bold leading-relaxed inline-block whitespace-nowrap uppercase hover:underline hover:animate-bounce"
@@ -57,7 +57,7 @@ export default function Navbar(props) {
               }
           >
             <Link href="/#description" className="block px-4 text-sm text-white hover:underline">
-              MySelf
+              About me
             </Link>
             <Link href="/#portfolio" className="block px-4 text-sm text-white hover:underline">
               Portfolio
@@ -65,9 +65,10 @@ export default function Navbar(props) {
             <Link href="/#skills" className="block px-4 text-sm text-white hover:underline">
               Skills
             </Link>
-            <Link href="/#certificates" className="block px-4 text-sm text-white hover:underline">
-              Certifications
+            <Link href="https://drive.google.com/file/d/1_iIF0DbcqtdGedlgORJlmQn6Dw1ZM2bp/view?usp=sharing" className="block px-4 text-sm text-white hover:underline">
+              Curriculum
             </Link>
+
           </div>
           
           <div

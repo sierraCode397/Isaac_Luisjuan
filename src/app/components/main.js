@@ -13,8 +13,16 @@ export default function Profile() {
       <Navbar transparent />
       <main className="bg-black profile-page">
         <div className="flex flex-wrap items-center justify-evenly px-6">
-
-          <div className="justify-center lg:pt-20">
+          <div 
+            className="pt-20 justify-center"
+            style={{ width: "200px" }}
+            >
+            <div className="p-5 text-center">
+              <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
+                {portafolioItems.length}
+              </span>
+              <span className="text-sm text-gray-300">Projects</span>
+            </div>
             <div className=" p-5 text-center">
               <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
                 {certificateItems.length}
@@ -27,20 +35,22 @@ export default function Profile() {
               </span>
               <span className="text-sm text-gray-300">Skills</span>
             </div>
-            <div className="p-5 text-center">
-              <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
-                {portafolioItems.length}
-              </span>
-              <span className="text-sm text-gray-300">Projects</span>
-            </div>
           </div>
 
-          <section className="relative block pt-20" style={{ height: "500px", width: "500px" }}>
+          <section
+            className="relative block pt-16"
+            style={{ height: "500px", width: "500px" }}
+          >
             <Cobe />
           </section>
-
-          <img className="h-64 lg:pt-20" src="https://imgur.com/zUMludi.jpg" alt="" />
-
+          <div className="mt-24 bg-gray-400">
+            <img
+              className=""
+              src="https://i.imgur.com/kcwYJW2.png"
+              alt=""
+              style={{ width: "200px", height: "280px" }}
+            />
+          </div>
         </div>
       </main>
     </>
