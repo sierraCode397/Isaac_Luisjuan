@@ -1,21 +1,12 @@
-
+import Cobe from "./../common/cobe";
 
 export default function Description() {
     return (
-      <section id="description" className="relative isolate overflow-hidden bg-black px-6 py-24 sm:py-32 lg:px-8">
+      <section id="description" className="relative isolate overflow-hidden bg-black px-6 lg:px-8">
         <div className="absolute inset-0 -z-10 bg-black opacity-20" />
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <img className="mx-auto h-14" src="https://imgur.com/e2TOmcF.jpg" alt="" />
           <figure className="mt-10">
-            <blockquote className="text-center text-xl font-semibold leading-8 sm:text-2xl sm:leading-9">
-              <p  style={{
-                    color: '#e5e7eb'
-                  }}>
-                “I am  passionate about software development, specializing in both front-end and back-end web development. 
-                Here, you will discover a digital space where creativity meets functionality. ¡Explore, 
-                discover and join this journey of code and creation! 🚀✨.”
-              </p>
-            </blockquote>
+
             <figcaption className="mt-10">
               <img
                 className="mx-auto h-14 w-14 rounded-full"
@@ -42,6 +33,13 @@ export default function Description() {
             </figcaption>
           </figure>
         </div>
+{/*         <section
+            className="relative block"
+            style={{ height: "500px", width: "500px" }}
+          >
+            <Cobe />
+          </section> */}
       </section>
+      
     )
   }
