@@ -75,6 +75,7 @@ export default function Cobe2() {
         { location: [46.8182, 8.2275], size: 0.07 }, //Suiza, Berma
         { location: [-35.2820, 149.1286], size: 0.07 }, //Australia, Canberra
         { location: [-20.1336, -67.4891], size: 0.07 }, //Bolivia, Salar de Uyuni
+        { location: [64.1466, -21.9426], size: 0.07 }, //Islandia, Reikiavik
 
 
       ],

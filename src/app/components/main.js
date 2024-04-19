@@ -15,14 +15,8 @@ export default function Profile() {
         <div className="flex flex-wrap items-center justify-evenly px-6">
           <div 
             className="pt-20 justify-center"
-            style={{ width: "200px" }}
+            style={{ width: "170px" }}
             >
-            <div className="p-5 text-center">
-              <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
-                {portafolioItems.length}
-              </span>
-              <span className="text-sm text-gray-300">Projects</span>
-            </div>
             <div className=" p-5 text-center">
               <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
                 {certificateItems.length}
@@ -35,6 +29,12 @@ export default function Profile() {
               </span>
               <span className="text-sm text-gray-300">Skills</span>
             </div>
+            <div className="p-5 text-center">
+              <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
+                {portafolioItems.length}
+              </span>
+              <span className="text-sm text-gray-300">Projects</span>
+            </div>
           </div>
 
           <section
@@ -43,12 +43,12 @@ export default function Profile() {
           >
             <Cobe />
           </section>
-          <div className="mt-24 bg-gray-400">
+          <div className="mt-24 bg-gray-400 border border-solid border-gray-100 ">
             <img
               className=""
-              src="https://i.imgur.com/kcwYJW2.png"
+              src="https://i.imgur.com/OmKvSac.png"
               alt=""
-              style={{ width: "200px", height: "280px" }}
+              style={{ width: "170px", height: "170px" }}
             />
           </div>
         </div>

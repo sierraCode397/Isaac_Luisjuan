@@ -56,16 +56,16 @@ export default function Navbar(props) {
                 (navbarOpen ? " lg:px-4" : " hidden")
               }
           >
-            <Link href="/#description" className="block px-4 text-sm text-white hover:underline">
+            <Link href="/#description" className="block px-4 text-md text-white hover:underline">
               About me
             </Link>
-            <Link href="/#portfolio" className="block px-4 text-sm text-white hover:underline">
+            <Link href="/#portfolio" className="block px-4 text-md text-white hover:underline">
               Portfolio
             </Link>
-            <Link href="/#skills" className="block px-4 text-sm text-white hover:underline">
+            <Link href="/#skills" className="block px-4 text-md text-white hover:underline">
               Skills
             </Link>
-            <Link href="https://drive.google.com/file/d/1_iIF0DbcqtdGedlgORJlmQn6Dw1ZM2bp/view?usp=sharing" className="block px-4 text-sm text-white hover:underline">
+            <Link href="https://drive.google.com/file/d/1_iIF0DbcqtdGedlgORJlmQn6Dw1ZM2bp/view?usp=sharing" className="block px-4 text-md text-white hover:underline">
               Curriculum
             </Link>
 
@@ -82,7 +82,7 @@ export default function Navbar(props) {
                 href="https://wa.me/3414112817"
                   className="text-gray-800 text-xs rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-0 ml-3"
                 >
-                  <img className="hover:animate-bounce w-10 h-10 fill-current" src="https://imgur.com/VloprFd.jpg"></img>
+                  <img className="rounded-lg hover:animate-bounce w-10 h-10 fill-current" src="https://i.imgur.com/529W0L5.jpeg"></img>
                 </a>
               </li>
 
@@ -91,7 +91,7 @@ export default function Navbar(props) {
                   href="https://mx.linkedin.com/in/isaac-luisjuan-guerrero-b016b0258"
                   className="text-gray-800  text-xs rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-0 ml-3"
                 >
-                  <img className="hover:animate-bounce w-10 h-10 fill-current" src="https://imgur.com/JnZ4Jfb.jpg"></img>
+                  <img className="rounded-lg hover:animate-bounce w-10 h-10 fill-current" src="https://i.imgur.com/gzm9wd9.jpeg"></img>
                 </a>
               </li>
 
