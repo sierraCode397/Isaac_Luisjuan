@@ -27,28 +27,31 @@ export default function Profile() {
                     color: '#e5e7eb',
                     
                   }}>
-                I am  passionate about software development, specializing in both front-end and back-end web development. 
-                Here, you will discover a digital space where creativity meets functionality. ¡Explore, 
-                discover and join this journey of code and creation!.
+                +3 years of experience developing code. 
+                I am Full-Stack Web developer working in personal projects as I learn new habilities. 
+                I live in Ciudad Guzman, Jalisco. Throughout time I have been improving day at day my skills 
+                with the most resent technologies to keep my profile upgrade.
+                I apply agil methodologies like Scrum to archive goals, crafting user stories to solve issues, 
+                and implementing CI/CD practices for efficient development and dependable deployment.
               </p>
             </blockquote>
           <div 
             className="flex sm:block justify-center pt-8 md:pt-0"
             style={{ width: "170px" }}
             >
-            <div className=" p-5 text-center">
+            <div className="hover:animate-bounce p-5 text-center">
               <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
                 {certificateItems.length}
               </span>
               <span className="text-sm text-gray-300">Certifications</span>
             </div>
-            <div className=" p-5 text-center">
+            <div className="hover:animate-bounce p-5 text-center">
               <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
                 {skillItem.length}
               </span>
               <span className="text-sm text-gray-300">Skills</span>
             </div>
-            <div className="p-5 text-center">
+            <div className="hover:animate-bounce p-5 text-center">
               <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
                 {portafolioItems.length}
               </span>
