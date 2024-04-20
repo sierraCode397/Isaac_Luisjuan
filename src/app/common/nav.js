@@ -56,14 +56,14 @@ export default function Navbar(props) {
                 (navbarOpen ? " lg:px-4" : " hidden")
               }
           >
-            <Link href="/#description" className="block px-4 text-md text-white hover:underline">
-              About me
+            <Link href="https://e-commerce-next-six.vercel.app/" className="block px-4 text-md text-white hover:underline">
+              Ecommerce
             </Link>
-            <Link href="/#portfolio" className="block px-4 text-md text-white hover:underline">
-              Portfolio
+            <Link href="https://admin-ecommerce-next.vercel.app/" className="block px-4 text-md text-white hover:underline">
+              Admin-Ecommerce
             </Link>
-            <Link href="/#skills" className="block px-4 text-md text-white hover:underline">
-              Skills
+            <Link href="https://node-autentication-app.onrender.com/api" className="block px-4 text-md text-white hover:underline">
+              API
             </Link>
             <Link href="https://drive.google.com/file/d/1_iIF0DbcqtdGedlgORJlmQn6Dw1ZM2bp/view?usp=sharing" className="block px-4 text-md text-white hover:underline">
               Curriculum
