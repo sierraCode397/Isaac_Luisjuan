@@ -8,10 +8,19 @@
 }
 
 .portfolio {
-    animation: reveal linear both;
-    animation-timeline: view();
-    animation-range: entry 10% cover 45%;
-  }
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 45%;
+}
+
+.skills {
+  padding: 0.5rem;
+  width: 100%;
+
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
+}
 
 @keyframes reveal {
   from {
@@ -23,5 +32,15 @@
     opacity: 1;
     translate: 0 0;
     scale: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills {
+    width: 25%; /* 1/4 */
+  }
+
+  .skills {
+    padding: 0.5rem; /* 2 * 0.25rem */
   }
 }
