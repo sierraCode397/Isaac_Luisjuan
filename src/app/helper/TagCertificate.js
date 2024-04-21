@@ -1,10 +1,14 @@
-"use client"
+"use client";
 
 export default function TagCertificate({ Items }) {
   return (
     <>
       {Items.map((product) => (
-        <div key={product.name} className="group relative flex-shrink-0" style={{ margin: '0 10px'}}>
+        <div
+          key={product.name}
+          className="group relative flex-shrink-0"
+          style={{ margin: "0 10px" }}
+        >
           <div className="relative h-44 w-60 md:h-64 md:w-80 overflow-hidden rounded-lg bg-white">
             <img
               src={product.image}
@@ -22,5 +26,3 @@ export default function TagCertificate({ Items }) {
     </>
   );
 }
-
-  

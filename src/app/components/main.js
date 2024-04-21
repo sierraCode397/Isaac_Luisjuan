@@ -55,12 +55,7 @@ export default function Profile() {
             />
           </div>
           <blockquote className="pt-8 md:pt-0 md:pl-4 lg:pl-0  text-center md:text-left">
-            <p
-              style={{
-                width: "50vw",
-                color: "#e5e7eb",
-              }}
-            >
+            <p className={styles.text}>
               +3 years of experience developing code. I am Full-Stack Web
               developer working in personal projects as I learn new habilities.
               I live in Ciudad Guzman, Jalisco. I apply agil methodologies like
@@ -74,7 +69,7 @@ export default function Profile() {
             style={{ width: "170px" }}
           >
           <Link href="/#certificates" className="">
-            <div className={styles.container}>
+            <div className={styles.context}>
               <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
                 {certificateItems.length}
               </span>
@@ -82,7 +77,7 @@ export default function Profile() {
             </div>
           </Link>
           <Link href="/#skills" className="">
-            <div className={styles.container}>
+            <div className={styles.context}>
             
               <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
                 {skillItem.length}
@@ -91,7 +86,7 @@ export default function Profile() {
             </div>
           </Link>
           <Link href="/#portfolio" className="">
-            <div className={styles.container}>
+            <div className={styles.context}>
             
               <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
                 {portafolioItems.length}

@@ -3,7 +3,7 @@ const { useMiContexto }= require ('../hooks/useContext');
 
 import TagCertificate from "../helper/TagCertificate";
 import InfiniteHorizontalScroller from "../helper/InfiniteHorizontalScroll";
-
+import styles from "../styles/scroll.module.css";
 
   export default function Certificates() {
 
@@ -11,7 +11,7 @@ import InfiniteHorizontalScroller from "../helper/InfiniteHorizontalScroll";
 
     return (
       <div id='certificates' className="bg-gray-100" style={{ overflowX: 'hidden' }}> {/* Cambiado overflow-x-auto a overflow-x-hidden */}
-        <div className="mx-auto  ">
+        <div className={styles.certificates}>
           <div className="mx-auto  py-8 lg:max-w-none ">
           <h1 className="text-3xl font-semibold text-center capitalize relative">
             <span className="bg-gradient-to-r from-yellow-600 to-black text-transparent bg-clip-text hover:text-4xl">Certificates</span>

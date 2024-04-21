@@ -1,10 +1,19 @@
-.container {
+.text {
+    width: 50vw;
+    color: #e5e7eb;
+  
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
+}
+
+.context {
   padding: 1.25rem;
   text-align: center;
 
   animation: reveal linear both;
   animation-timeline: view();
-  animation-range: entry 10% cover 30%;
+  animation-range: entry 10% cover 40%;
 }
 
 .portfolio {
@@ -21,6 +30,16 @@
   animation-timeline: view();
   animation-range: entry 10% cover 40%;
 }
+
+.certificates {
+  margin-left: auto;
+  margin-right: auto;
+  
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 50%;
+}
+  
 
 @keyframes reveal {
   from {
