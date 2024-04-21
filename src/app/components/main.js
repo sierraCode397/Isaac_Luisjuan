@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import styles from "../styles/scroll.module.css";
 import Navbar from "./../common/nav";
 const { useMiContexto } = require("./../hooks/useContext");
 
@@ -73,7 +74,7 @@ export default function Profile() {
             style={{ width: "170px" }}
           >
           <Link href="/#certificates" className="">
-            <div className="hover:animate-bounce p-5 text-center">
+            <div className={styles.container}>
               <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
                 {certificateItems.length}
               </span>
@@ -81,7 +82,8 @@ export default function Profile() {
             </div>
           </Link>
           <Link href="/#skills" className="">
-            <div className="hover:animate-bounce p-5 text-center">
+            <div className={styles.container}>
+            
               <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
                 {skillItem.length}
               </span>
@@ -89,7 +91,8 @@ export default function Profile() {
             </div>
           </Link>
           <Link href="/#portfolio" className="">
-            <div className="hover:animate-bounce p-5 text-center">
+            <div className={styles.container}>
+            
               <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
                 {portafolioItems.length}
               </span>
