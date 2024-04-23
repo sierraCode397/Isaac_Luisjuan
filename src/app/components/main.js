@@ -11,7 +11,7 @@ export default function Profile() {
   return (
     <>
       <Navbar transparent />
-      <main className="pt-32 bg-black profile-page">
+      <main className="pt-24 sm:pt-32 bg-black profile-page">
         <div className="px-8 pb-8 sm:pb-6 lg:pb-0 mt-4 flex items-center justify-center space-x-3 text-base">
           <div
             style={{

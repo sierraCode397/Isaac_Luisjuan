@@ -1,10 +1,6 @@
 .text {
-  width: 50vw;
+  width: 65vw;
   color: #e5e7eb;
-
-  animation: reveal linear both;
-  animation-timeline: view();
-  animation-range: entry 10% cover 40%;
 }
 
 .context {
@@ -13,7 +9,7 @@
 
   animation: reveal linear both;
   animation-timeline: view();
-  animation-range: entry 10% cover 32%;
+  animation-range: entry 10% cover 35%;
 }
 
 .description {
@@ -73,5 +69,14 @@
 
   .description {
     margin-bottom: 4rem;
+  }
+
+  .text {
+  }
+}
+
+@media (min-width: 665px) {
+  .text {
+    width: 50vw;
   }
 }

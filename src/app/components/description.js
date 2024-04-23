@@ -6,7 +6,6 @@ export default function Description() {
     <section
       id="description"
       className={styles.description}
-      style={{ height: "500px" }}
     >
       <div className="flex flex-wrap items-center justify-evenly px-6">
         <p
@@ -16,7 +15,7 @@ export default function Description() {
           Become the architect of your own world with code.
         </p>
         <section
-          className="relative block"
+          className=" "
           style={{ height: "500px", width: "500px" }}
         >
           <Cobe />
