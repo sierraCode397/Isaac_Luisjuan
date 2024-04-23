@@ -1,7 +1,7 @@
 .text {
   width: 50vw;
   color: #e5e7eb;
-  
+
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 10% cover 40%;
@@ -14,6 +14,15 @@
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 10% cover 32%;
+}
+
+.description {
+  padding-top: 2rem;
+  background-color: black;
+
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 15% cover 50%;
 }
 
 .portfolio {
@@ -34,12 +43,11 @@
 .certificates {
   margin-left: auto;
   margin-right: auto;
-  
+
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 10% cover 50%;
 }
-  
 
 @keyframes reveal {
   from {
@@ -61,5 +69,9 @@
 
   .skills {
     padding: 0.5rem; /* 2 * 0.25rem */
+  }
+
+  .description {
+    margin-bottom: 4rem;
   }
 }

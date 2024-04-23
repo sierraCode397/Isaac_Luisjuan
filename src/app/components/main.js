@@ -45,12 +45,12 @@ export default function Profile() {
               className="rounded-lg"
               src="https://i.imgur.com/OmKvSac.png"
               alt=""
-              style={{ 
-                width: "170px", 
+              style={{
+                width: "170px",
                 height: "170px",
                 animation: "reveal lineal both",
                 animationTimeline: "view()",
-                animationRange: "entry 20% cover 30%"
+                animationRange: "entry 20% cover 30%",
               }}
             />
           </div>
@@ -68,32 +68,30 @@ export default function Profile() {
             className="flex md:block justify-center pt-8 md:pt-0"
             style={{ width: "170px" }}
           >
-          <Link href="/#certificates" className="">
-            <div className={styles.context}>
-              <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
-                {certificateItems.length}
-              </span>
-              <span className="text-sm text-gray-300">Certifications</span>
-            </div>
-          </Link>
-          <Link href="/#skills" className="">
-            <div className={styles.context}>
-            
-              <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
-                {skillItem.length}
-              </span>
-              <span className="text-sm text-gray-300">Skills</span>
-            </div>
-          </Link>
-          <Link href="/#portfolio" className="">
-            <div className={styles.context}>
-            
-              <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
-                {portafolioItems.length}
-              </span>
-              <span className="text-sm text-gray-300">Projects</span>
-            </div>
-          </Link>
+            <Link href="/#certificates" className="">
+              <div className={styles.context}>
+                <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
+                  {certificateItems.length}
+                </span>
+                <span className="text-sm text-gray-300">Certifications</span>
+              </div>
+            </Link>
+            <Link href="/#skills" className="">
+              <div className={styles.context}>
+                <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
+                  {skillItem.length}
+                </span>
+                <span className="text-sm text-gray-300">Skills</span>
+              </div>
+            </Link>
+            <Link href="/#portfolio" className="">
+              <div className={styles.context}>
+                <span className="text-xl font-bold block uppercase tracking-wide text-gray-100">
+                  {portafolioItems.length}
+                </span>
+                <span className="text-sm text-gray-300">Projects</span>
+              </div>
+            </Link>
           </div>
         </div>
       </main>
