@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { useSpring } from '@react-spring/web';
 
 export default function Cobe2() {
-  const [miVariable, setMiVariable] = useState(20000);
+  const [miVariable, setMiVariable] = useState(16000);
   const canvasRef = useRef();
   const pointerInteracting = useRef(null);
   const pointerInteractingY = useRef(null);
@@ -27,7 +27,7 @@ export default function Cobe2() {
       setMiVariable(12000);
     } 
     else {
-      setMiVariable(20000);
+      setMiVariable(16000);
     }
   };
 

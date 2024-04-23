@@ -54,11 +54,6 @@ export const MiContextoProvider = ({ children }) => {
         skillItem
       };
 
-      setInterval(() => {
-        fetchData();
-        console.log("Se hizo loop a la API")
-      }, 360000);
-
     return <MiContexto.Provider value={contextValue}>{children}</MiContexto.Provider>;
 };
 

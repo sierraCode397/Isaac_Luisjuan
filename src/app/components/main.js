@@ -65,7 +65,7 @@ export default function Profile() {
             </p>
           </blockquote>
           <div
-            className="flex sm:block justify-center pt-8 md:pt-0"
+            className="flex md:block justify-center pt-8 md:pt-0"
             style={{ width: "170px" }}
           >
           <Link href="/#certificates" className="">
