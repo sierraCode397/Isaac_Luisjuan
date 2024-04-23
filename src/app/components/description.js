@@ -10,7 +10,7 @@ export default function Description() {
     >
       <div className="flex flex-wrap items-center justify-evenly px-6">
         <p
-          className="hover:animate-bounce hidden lg:block border border-solid border-white rounded p-4 py-12"
+          className="text-white hover:animate-bounce hidden lg:block border border-solid border-white rounded p-4 py-12"
           style={{ width: "170px" }}
         >
           Become the architect of your own world with code.
@@ -22,7 +22,7 @@ export default function Description() {
           <Cobe />
         </section>
         <p
-          className="hover:animate-bounce hidden lg:block border border-solid border-white rounded p-4 py-12"
+          className="text-white hover:animate-bounce hidden lg:block border border-solid border-white rounded p-4 py-12"
           style={{ width: "170px" }}
         >
           The limits of my lenguage means the limits of my world.
