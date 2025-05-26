@@ -14,7 +14,7 @@ const Footer = () => {
                             <img className="w-auto h-7" src="https://imgur.com/e2TOmcF.jpg" alt="" />
                         </a>
 
-                        <p className="max-w-sm mt-2 text-gray-500">Learn more about my profile and never miss new projects, updates and more.</p>
+                        <p className="max-w-sm mt-2 pr-8 text-gray-500">Learn more about my profile and never miss new projects, updates and more.</p>
 
                         <div className="flex mt-6 -mx-2">
                             <a href="https://wa.me/3414112817"
@@ -73,8 +73,8 @@ const Footer = () => {
                         <div>
                             <h3 className="uppercase text-white">Contact</h3>
                             <span className="block mt-2 text-sm text-gray-400 hover:underline">+52 341 411 2817</span>
-                            <span href='' className="block mt-2 text-sm text-gray-400 hover:underline">isaacluisjuan0@gmail.com</span>
-                            <Link href="https://drive.google.com/file/d/1_iIF0DbcqtdGedlgORJlmQn6Dw1ZM2bp/view?usp=sharing" className="block mt-2 text-sm text-gray-400 hover:underline">Curriculum</Link>
+                            <span href='' className="block mt-2 text-sm text-gray-400 hover:underline">isaacluisjuan@zohomail.com</span>
+                            <Link href="https://drive.google.com/file/d/1rG8HB0oW6C1EojeDkAVovQDTNhOOyC6x/view?usp=sharing" className="block mt-2 text-sm text-gray-400 hover:underline">Curriculum</Link>
                         </div>
                     </div>
                 </div>

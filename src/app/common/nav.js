@@ -65,7 +65,7 @@ export default function Navbar(props) {
             <Link href="https://node-autentication-app.onrender.com/api" className="block px-4 text-md text-white hover:underline">
               API
             </Link>
-            <Link href="https://drive.google.com/file/d/1_iIF0DbcqtdGedlgORJlmQn6Dw1ZM2bp/view?usp=sharing" className="block px-4 text-md text-white hover:underline">
+            <Link href="https://drive.google.com/file/d/1rG8HB0oW6C1EojeDkAVovQDTNhOOyC6x/view?usp=sharing" className="block px-4 text-md text-white hover:underline">
               Curriculum
             </Link>
 

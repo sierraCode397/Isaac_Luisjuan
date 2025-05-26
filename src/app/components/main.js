@@ -36,7 +36,7 @@ export default function Profile() {
               color: "#e5e7eb",
             }}
           >
-            Full-Stack Developer | JavaScript | Node | SQL
+            DevOps Engineer | Site Reliability Engineer | AWS Solution Architect | IaaC | CI/CD
           </div>
         </div>
         <div className="flex flex-wrap items-center justify-evenly px-6">
@@ -56,17 +56,16 @@ export default function Profile() {
           </div>
           <blockquote className="pt-8 md:pt-0 md:pl-4 lg:pl-0  text-center md:text-left">
             <p className={styles.text}>
-              +3 years of experience developing code. I am Full-Stack Web
-              developer working in personal projects as I learn new habilities.
-              I live in Ciudad Guzman, Jalisco. I apply agil methodologies like
-              Scrum to archive goals, crafting user stories to solve issues, and
-              implementing CI/CD practices for efficient development and
-              dependable deployment.
+              I&#39;m a DevOps & Site Reliability Engineer (SRE) 🧑🏻‍💻 dedicated to designing resilient, automated 
+              platforms that reduce costs, save time, and drive impactful results at scale 💥. Over the past 
+              2+ years, I&#39;ve transformed challenges—like Linux administration, cloud infrastructure, and CI/CD 
+              pipelines—into certified expertise, delivering real-world projects in AWS and multi-cloud environments 🏛️ 
+              that accelerate decision-making and boost operational agility.
             </p>
           </blockquote>
           <div
             className="flex md:block justify-center pt-8 md:pt-0"
-            style={{ width: "170px" }}
+            style={{ width: "160px" }}
           >
             <Link href="/#certificates" className="">
               <div className={styles.context}>

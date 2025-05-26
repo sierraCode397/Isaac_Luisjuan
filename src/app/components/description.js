@@ -24,11 +24,11 @@ export default function Description() {
           <Cobe />
         </section>
         <div className="">
-              <a href="https://www.credly.com/badges/e6d53ea3-5211-4d49-8d57-de6ee56797ec" className="hover:animate-bounce block relative h-26 rounded overflow-hidden">
+              <a href="https://www.credly.com/badges/1095a418-3576-458d-8633-f0a1837dd296/public_url" className="hover:animate-bounce block relative h-26 rounded overflow-hidden">
                 <img
                   alt="ecommerce"
                   className="object-fill object-center mx-auto mb-24 md:mb-0 w-48 h-34 md:w-48 md:h-34 lg:w-52 lg:h-34 block"
-                  src="https://imgur.com/f9i2YwA.png"
+                  src="https://imgur.com/k3yRPAA.png"
                 />
               </a>
         </div>
