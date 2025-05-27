@@ -56,11 +56,11 @@ export default function Navbar(props) {
                 (navbarOpen ? " lg:px-4" : " hidden")
               }
           >
-            <Link href="https://e-commerce-next-six.vercel.app/" className="block px-4 text-md text-white hover:underline">
-              Ecommerce
+            <Link href="https://github.com/sierraCode397/Project-Terraform-CI-CD" className="block px-4 text-md text-white hover:underline">
+              PipeLine-Jenkins
             </Link>
-            <Link href="https://admin-ecommerce-next.vercel.app/" className="block px-4 text-md text-white hover:underline">
-              Admin-Ecommerce
+            <Link href="https://github.com/sierraCode397/Automation_Tools_Terraform_Ansible" className="block px-4 text-md text-white hover:underline">
+              Automation_Tools
             </Link>
             <Link href="https://node-autentication-app.onrender.com/api" className="block px-4 text-md text-white hover:underline">
               API

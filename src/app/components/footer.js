@@ -59,14 +59,13 @@ const Footer = () => {
 
                         <div>
                             <h3 className="uppercase text-white">Blog</h3>
-                            <Link href="https://sierracode397.github.io/" className="block mt-2 text-sm text-gray-400 hover:underline">Landing Page</Link>
                             <Link href="https://sierracode397.github.io/Gastronomy.html" className="block mt-2 text-sm text-gray-400 hover:underline">Gastronomy</Link>
                         </div>
 
                         <div>
                             <h3 className="uppercase text-white">Products</h3>
                             <Link href="https://e-commerce-next-six.vercel.app/" className="block mt-2 text-sm text-gray-400 hover:underline">E-Commerce</Link>
-                            <Link href="https://admin-ecommerce-next.vercel.app/" className="block mt-2 text-sm text-gray-400 hover:underline">Admin</Link>
+                            <Link href="https://admin-ecommerce-next.vercel.app/" className="block mt-2 text-sm text-gray-400 hover:underline">Monitoring Stuffs</Link>
                             <Link href="https://node-autentication-app.onrender.com/api" className="block mt-2 text-sm text-gray-400 hover:underline">API</Link>
                         </div>
 
