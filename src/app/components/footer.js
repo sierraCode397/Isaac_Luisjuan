@@ -58,8 +58,9 @@ const Footer = () => {
                         </div>
 
                         <div>
-                            <h3 className="uppercase text-white">Blog</h3>
-                            <Link href="https://sierracode397.github.io/Gastronomy.html" className="block mt-2 text-sm text-gray-400 hover:underline">Gastronomy</Link>
+                            <h3 className="uppercase text-white">Architectures</h3>
+                            <Link href="https://github.com/sierraCode397/Project-Terraform-CI-CD" className="block mt-2 text-sm text-gray-400 hover:underline">CI/CD Infrastructure-as-Code (AWS & Azure)</Link>
+                            <Link href="https://github.com/sierraCode397/Automation_Tools_Terraform_Ansible" className="block mt-2 text-sm text-gray-400 hover:underline">Automation Tools (AWS)</Link>
                         </div>
 
                         <div>

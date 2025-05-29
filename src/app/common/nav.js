@@ -57,7 +57,7 @@ export default function Navbar(props) {
               }
           >
             <Link href="https://github.com/sierraCode397/Project-Terraform-CI-CD" className="block px-4 text-md text-white hover:underline">
-              PipeLine-Jenkins
+              CI/CD Infrastructure-as-Code
             </Link>
             <Link href="https://github.com/sierraCode397/Automation_Tools_Terraform_Ansible" className="block px-4 text-md text-white hover:underline">
               Automation_Tools
